@@ -8,7 +8,7 @@ var express = require("express"),
 const { ObjectID } = require("mongodb");
 
 mongoose.connect(
-  process.env.MONGO_URI || "mongodb://localhost:27017/devfestKolkata",
+  process.env.MONGODB_URI || "mongodb://localhost:27017/devfestKolkata",
   {
     useNewUrlParser: true
   }
