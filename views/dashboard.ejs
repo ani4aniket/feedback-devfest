@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>DevFest' 19 Kolkata Feedback Form</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet" />
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.min.css" rel="stylesheet" />
+    <style>
+      .search-form {
+        border-radius: 30px 0px 0px 30px;
+        /*border-radius:Top-left, Top-right, Bottom-right, Bottom-left;*/
+      }
+      /*to cange only one form and not all give unique class name like  class="search-form" */
+      .search-btn {
+        border-radius: 0px 30px 30px 0px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--Main Navigation-->
+    <header>
+      <!-- Navbar -->
+      <nav
+        class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar"
+      >
+        <div class="container">
+          <!-- Brand -->
+          <a
+            class="navbar-brand waves-effect"
+            href=""
+            target="_blank"
+            style="display:flex; justify-content:center; align-items:center "
+          >
+            <img
+              src="https://pbs.twimg.com/media/D22N_huX4AEbb1y.jpg"
+              style="height: 50px"
+              alt=""
+              srcset=""
+            />
+            <strong class="grey-text">GDG Kolkata</strong>
+          </a>
+
+          <!-- Collapse -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Links -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Left -->
+            <ul class="navbar-nav mr-auto"></ul>
+
+            <!-- Right -->
+            <ul class="navbar-nav nav-flex-icons">
+              <li class="nav-item">
+                <a
+                  href="https://www.facebook.com/mdbootstrap"
+                  class="nav-link waves-effect"
+                  target="_blank"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://twitter.com/MDBootstrap"
+                  class="nav-link waves-effect"
+                  target="_blank"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="https://github.com/mdbootstrap/bootstrap-material-design"
+                  class="nav-link rounded waves-effect"
+                  target="_blank"
+                >
+                  <i class="fa fa-globe"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class="mt-5 pt-5">
+      <div class="container">
+        <!--Section: Jumbotron-->
+        <section class="card wow fadeIn">
+          <!-- Content -->
+          <div class="card-body text-white text-center py-5 px-5 my-5">
+            <!-- Material form subscription -->
+            <div class="">
+              <!--Card content-->
+              <div class="card-body px-lg-5">
+                <!-- Form -->
+                <form
+                  class="text-center"
+                  style="color: #757575;"
+                  action="/feedback/submit"
+                  method="POST"
+                >
+                  <!--Email-->
+                  <div class="md-form">
+                    <input
+                      type="email"
+                      id="materialSubscriptionFormEmail"
+                      class="form-control"
+                      name="email"
+                    />
+                    <label for="materialSubscriptionFormEmail">E-mail</label>
+                  </div>
+                  <!-- Overall event rating: -->
+                  <div class="md-form mt-3">
+                    <p>How do you rate the event overall?</p>
+                    <div class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="one"
+                        name="overallRating"
+                        value="1"
+                      />
+                      <label class="custom-control-label" for="one">1</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="two"
+                        name="overallRating"
+                        value="2"
+                      />
+                      <label class="custom-control-label" for="two">2</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="three"
+                        name="overallRating"
+                        value="3"
+                      />
+                      <label class="custom-control-label" for="three">3</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="four"
+                        name="overallRating"
+                        value="4"
+                      />
+                      <label class="custom-control-label" for="four">4</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="five"
+                        name="overallRating"
+                        value="5"
+                      />
+                      <label class="custom-control-label" for="five">5</label>
+                    </div>
+                  </div>
+                  <!--Events Attended-->
+                  <div class="md-form mt-3">
+                    <p>Which sessions did you attend?</p>
+                    <div class="custom-control custom-checkbox">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="zeroSession1"
+                        name="sessionsAttended"
+                        value="Keynote by Harsh Dattani"
+                      />
+                      <label class="custom-control-label" for="zeroSession1"
+                      >Keynote - Harsh Dattani</label
+                      >
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="zeroSession2"
+                        name="sessionsAttended"
+                        value="Keynote: How and Why Communities Can Help!-Nitika Gandhi"
+                      />
+                      <label class="custom-control-label" for="zeroSession2"
+                      >Keynote: How and Why Communities Can Help! - Nitika Gandhi</label
+                      >
+                    </div>
+
+                    <div class="custom-control custom-checkbox">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="oneSession"
+                        name="sessionsAttended"
+                        value="Cut your APK size with features on demand-Suneet Agrawal"
+                      />
+                      <label class="custom-control-label" for="oneSession"
+                      >Cut your APK size with features on demand - Suneet Agrawal</label
+                      >
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="twoSession"
+                        name="sessionsAttended"
+                        value="Scale your Web Application Securely on Compute Engine-Chirag Nayyar"
+                      />
+                      <label class="custom-control-label" for="twoSession"
+                      >Scale your Web Application Securely on Compute Engine - Chirag Nayyar
+                      </label
+                      >
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="threeSession"
+                        name="sessionsAttended"
+                        value="A tale of Multiplatform-Bedanta Bikash Borah
+                        Jitin Sharma"
+                      />
+                      <label class="custom-control-label" for="threeSession"
+                      >A tale of Multiplatform-Bedanta Bikash Borah - Jitin Sharma
+                      </label
+                      >
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="fourSession"
+                        name="sessionsAttended"
+                        value="Special Session on Startup and Building Ideas-Prajyot Mainkar"
+                      />
+                      <label class="custom-control-label" for="fourSession"
+                      >Special Session on Startup and Building Ideas - Prajyot Mainkar
+                      </label
+                      >
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="fiveSession"
+                        name="sessionsAttended"
+                        value="Effective DI for Multi Module Project
+                        Adit Lal"
+                      />
+                      <label class="custom-control-label" for="fiveSession"
+                      >Effective DI for Multi Module Project - Adit Lal
+                      </label
+                      >
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="sixSession"
+                        name="sessionsAttended"
+                        value="Tweet to Location :- Predicting location of a user based on his tweets
+                        Yash Deo"
+                      />
+                      <label class="custom-control-label" for="sixSession"
+                      >Tweet to Location :- Predicting location of a user based on his tweets - Yash Deol
+                      </label
+                      >
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="sevenSession"
+                        name="sessionsAttended"
+                        value="Bringing Intelligence to Cross-Platform Applications
+                        Rimjhim Bhadani"
+                      />
+                      <label class="custom-control-label" for="sevenSession"
+                      >Bringing Intelligence to Cross-Platform Applications - Rimjhim Bhadani
+                      </label
+                      >
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="eightSession"
+                        name="sessionsAttended"
+                        value="Using wordvectors
+                        Priyanka Sinha"
+                      />
+                      <label class="custom-control-label" for="eightSession"
+                      >Using wordvectors - Priyanka Sinha
+                      </label
+                      >
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="nineSession"
+                        name="sessionsAttended"
+                        value="Dark Sky Mysteries With ML
+                        Dikshita Desai"
+                      />
+                      <label class="custom-control-label" for="nineSession"
+                      >Dark Sky Mysteries With ML - Dikshita Desaia
+                      </label
+                      >
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="tenSession"
+                        name="sessionsAttended"
+                        value="Let's Talk Composing UI
+                        Rivu Chakraborty"
+                      />
+                      <label class="custom-control-label" for="tenSession"
+                      >Let's Talk Composing UI - Rivu Chakraborty
+                      </label
+                      >
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="elevenSession"
+                        name="sessionsAttended"
+                        value="AI for Web : Web for AI - Anubhav Singh"
+                      />
+                      <label class="custom-control-label" for="elevenSession"
+                      >AI for Web : Web for AI - Anubhav Singh
+                      </label
+                      >
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                      <input
+                      type="checkbox"
+                      class="custom-control-input"
+                      id="twelveSession"
+                      name="sessionsAttended"
+                      value="Putting Work Manager To Work
+                      Adnan A M"
+                    />
+                    <label class="custom-control-label" for="twelveSession"
+                    >Putting Work Manager To Work - Adnan A M
+                    </label
+                    >
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="thirteenSession"
+                  name="sessionsAttended"
+                  value="Not everything can fit in rows and columns
+                  Ashok Vishwakarma"
+                />
+                <label class="custom-control-label" for="thirteenSession"
+                >Not everything can fit in rows and columns - Ashok Vishwakarma
+                </label
+                >
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input
+              type="checkbox"
+              class="custom-control-input"
+              id="fourteenSession"
+              name="sessionsAttended"
+              value="Sneaking inside Kotlin features
+              Chandra Sekhar Nayak"
+            />
+            <label class="custom-control-label" for="fourteenSession"
+            >Sneaking inside Kotlin features - Chandra Sekhar Nayak
+            </label
+            >
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input
+          type="checkbox"
+          class="custom-control-input"
+          id="fifteenSession"
+          name="sessionsAttended"
+          value="Women in Machine Learning - Panel Discussion"
+        />
+        <label class="custom-control-label" for="fifteenSession"
+        >Women in Machine Learning - Panel Discussion
+        </label
+        >
+    </div>
+    <div class="custom-control custom-checkbox">
+      <input
+      type="checkbox"
+      class="custom-control-input"
+      id="sixteenSession"
+      name="sessionsAttended"
+      value="Manage your app state like a Pro
+      Dhrumil Shah"
+    />
+    <label class="custom-control-label" for="sixteenSession"
+    >Manage your app state like a Pro - Dhrumil Shah
+    </label
+    >
+</div>
+<div class="custom-control custom-checkbox">
+  <input
+  type="checkbox"
+  class="custom-control-input"
+  id="seventeenSession"
+  name="sessionsAttended"
+  value="Minimizing CPU utilization for deep networks
+  Akshay Bahadur
+  "
+/>
+<label class="custom-control-label" for="seventeenSession"
+>Minimizing CPU utilization for deep networks - Akshay Bahadur
+</label
+>
+</div>
+<div class="custom-control custom-checkbox">
+  <input
+  type="checkbox"
+  class="custom-control-input"
+  id="eightteenSession"
+  name="sessionsAttended"
+  value="Become a Pro Flutter Developer
+  Pawan Kumar
+  Sayak Paul"
+/>
+<label class="custom-control-label" for="eightteenSession"
+>Become a Pro Flutter Developer - Pawan Kumar & Sayak Paul
+</label
+>
+</div>
+                  </div>
+                  <!-- Showcase Booths: -->
+                  <div class="md-form mt-3">
+                    <p>Which Showcase booths did you visit?</p>
+                    <div class="custom-control custom-checkbox">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="oneShow"
+                        name="visitedSBs"
+                        value="Shroff Publishers and Distributers"
+                      />
+                      <label class="custom-control-label" for="oneShow"
+                        >Shroff Publishers and Distributers</label
+                      >
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="twoShow"
+                        name="visitedSBs"
+                        value="Uvsity"
+                      />
+                      <label class="custom-control-label" for="twoShow"
+                        >Uvsity</label
+                      >
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="threeShow"
+                        name="visitedSBs"
+                        value="InSync"
+                      />
+                      <label class="custom-control-label" for="threeShow"
+                        >InSync</label
+                      >
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                      <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="fourShow"
+                        name="visitedSBs"
+                        value="Community Booth"
+                      />
+                      <label class="custom-control-label" for="fourShow"
+                        >Community Booth</label
+                      >
+                    </div>
+                  </div>
+                  <!--Buffet Rating-->
+                  <div class="md-form mt-3">
+                    <p>How do you rate the Buffet?</p>
+                    <div class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="oneBuffet"
+                        name="buffetRating"
+                        value="1"
+                      />
+                      <label class="custom-control-label" for="oneBuffet"
+                        >1</label
+                      >
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="twoBuffet"
+                        name="buffetRating"
+                        value="2"
+                      />
+                      <label class="custom-control-label" for="twoBuffet"
+                        >2</label
+                      >
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="threeBuffet"
+                        name="buffetRating"
+                        value="3"
+                      />
+                      <label class="custom-control-label" for="threeBuffet"
+                        >3</label
+                      >
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="fourBuffet"
+                        name="buffetRating"
+                        value="4"
+                      />
+                      <label class="custom-control-label" for="fourBuffet"
+                        >4</label
+                      >
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="fiveBuffet"
+                        name="buffetRating"
+                        value="5"
+                      />
+                      <label class="custom-control-label" for="fiveBuffet"
+                        >5</label
+                      >
+                    </div>
+                  </div>
+                  <!--Stage Rating-->
+                    <div class="md-form mt-3">
+                      <p>How do you rate the stage/audio equipment?</p>
+                      <div class="custom-control custom-radio">
+                        <input
+                          type="radio"
+                          class="custom-control-input"
+                          id="oneStage"
+                          name="stageRating"
+                          value="1"
+                        />
+                        <label class="custom-control-label" for="oneStage"
+                          >1</label
+                        >
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input
+                          type="radio"
+                          class="custom-control-input"
+                          id="twoStage"
+                          name="stageRating"
+                          value="2"
+                        />
+                        <label class="custom-control-label" for="twoStage"
+                          >2</label
+                        >
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input
+                          type="radio"
+                          class="custom-control-input"
+                          id="threeStage"
+                          name="stageRating"
+                          value="3"
+                        />
+                        <label class="custom-control-label" for="threeStage"
+                          >3</label
+                        >
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input
+                          type="radio"
+                          class="custom-control-input"
+                          id="fourStage"
+                          name="stageRating"
+                          value="4"
+                        />
+                        <label class="custom-control-label" for="fourStage"
+                          >4</label
+                        >
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input
+                          type="radio"
+                          class="custom-control-input"
+                          id="fiveStage"
+                          name="stageRating"
+                          value="5"
+                        />
+                        <label class="custom-control-label" for="fiveStage"
+                          >5</label
+                        >
+                      </div>
+                      <!--volunteer rating:-->
+                      <div class="md-form mt-3">
+                        <p>How firendly and helpful were the volunteers at the event?</p>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="oneVol"
+                            name="volunteerRating"
+                            value="1"
+                          />
+                          <label class="custom-control-label" for="oneVol"
+                            >1</label
+                          >
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="twoVol"
+                            name="volunteerRating"
+                            value="2"
+                          />
+                          <label class="custom-control-label" for="twoVol"
+                            >2</label
+                          >
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="threeVol"
+                            name="volunteerRating"
+                            value="3"
+                          />
+                          <label class="custom-control-label" for="threeVol"
+                            >3</label
+                          >
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="fourVol"
+                            name="volunteerRating"
+                            value="4"
+                          />
+                          <label class="custom-control-label" for="fourVol"
+                            >4</label
+                          >
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="fiveVol"
+                            name="volunteerRating"
+                            value="5"
+                          />
+                          <label class="custom-control-label" for="fiveVol"
+                            >5</label
+                          >
+                        </div>
+                      </div>
+                      <!--Event Management Rating:-->
+                      <div class="md-form mt-3">
+                        <p>How do you rate the event management on the day of the event?</p>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="oneEvent"
+                            name="eventManagementRating"
+                            value="1"
+                          />
+                          <label class="custom-control-label" for="oneEvent"
+                            >1</label
+                          >
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="twoEvent"
+                            name="eventManagementRating"
+                            value="2"
+                          />
+                          <label class="custom-control-label" for="twoEvent"
+                            >2</label
+                          >
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="threeEvent"
+                            name="eventManagementRating"
+                            value="3"
+                          />
+                          <label class="custom-control-label" for="threeEvent"
+                            >3</label
+                          >
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="fourEvent"
+                            name="eventManagementRating"
+                            value="4"
+                          />
+                          <label class="custom-control-label" for="fourEvent"
+                            >4</label
+                          >
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="fiveEvent"
+                            name="eventManagementRating"
+                            value="5"
+                          />
+                          <label class="custom-control-label" for="fiveEvent"
+                            >5</label
+                          >
+                        </div>
+                      </div>
+                      <!--before event rating :-->
+                      <div class="md-form mt-3">
+                        <p>How do you rate the event management before the event(application,website,app etc)?</p>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="oneBefore"
+                            name="beforeEventRating"
+                            value="1"
+                          />
+                          <label class="custom-control-label" for="oneBefore"
+                            >1</label
+                          >
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="twoBefore"
+                            name="beforeEventRating"
+                            value="2"
+                          />
+                          <label class="custom-control-label" for="twoBefore"
+                            >2</label
+                          >
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="threeBefore"
+                            name="beforeEventRating"
+                            value="3"
+                          />
+                          <label class="custom-control-label" for="threeBefore"
+                            >3</label
+                          >
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="fourBefore"
+                            name="beforeEventRating"
+                            value="4"
+                          />
+                          <label class="custom-control-label" for="fourBefore"
+                            >4</label
+                          >
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="fiveBefore"
+                            name="beforeEventRating"
+                            value="5"
+                          />
+                          <label class="custom-control-label" for="fiveBefore"
+                            >5</label
+                          >
+                        </div>
+                      </div>
+                      <!--Uocming DevFest-->
+                      <div class="md-form mt-3">
+                        <p>Would you like to attend DevFest Kolkata 2020?</p>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="yes"
+                            name="upcomingDevfest"
+                            value="Yes"
+                          />
+                          <label class="custom-control-label" for="yes"
+                            >Yes</label
+                          >
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="no"
+                            name="upcomingDevfest"
+                            value="No"
+                          />
+                          <label class="custom-control-label" for="no"
+                            >No</label
+                          >
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="maybe"
+                            name="upcomingDevfest"
+                            value="Maybe"
+                          />
+                          <label class="custom-control-label" for="maybe"
+                            >Maybe</label
+                          >
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="yes_but_wont_be_able_to"
+                            name="upcomingDevfest"
+                            value="Yes,but won't be able to"
+                          />
+                          <label class="custom-control-label" for="yes_but_wont_be_able_to"
+                            >Yes,but won't be able to</label
+                          >
+                        </div>
+                      </div>
+                      <!--Short Review of devfest 19-->
+                      <div class="md-form mb-4 pink-textarea active-pink-textarea">
+                        <textarea name ="shortReview" id="form18" class="md-textarea form-control" rows="3"></textarea>
+                        <label for="form18">What would be your short review of the event?</label>
+                      </div>
+                      <!--How can we make better-->
+                      <div class="md-form mb-4 pink-textarea active-pink-textarea">
+                        <textarea name ="makingBetter" id="form18" class="md-textarea form-control" rows="3"></textarea>
+                        <label for="form18">How could we have made this event better?</label>
+                      </div>
+                  <!-- Sign in button -->
+                  <button
+                    class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect"
+                    type="submit"
+                  >
+                    SUBMIT
+                  </button>
+                </form>
+                <!-- Form -->
+              </div>
+            </div>
+            <!-- Material form subscription -->
+          </div>
+          <!-- Content -->
+        </section>
+        <!--Section: Jumbotron-->
+
+        <!--Section: Cards-->
+      </div>
+    </main>
+    <!--Main layout-->
+
+    <!--/.Footer-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Initializations -->
+    <script type="text/javascript">
+      // Animations initialization
+      new WOW().init();
+    </script>
+  </body>
+</html>
